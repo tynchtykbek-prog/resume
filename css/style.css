@@ -1,0 +1,129 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: Arial;
+
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: cornflowerblue;
+}
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+
+}
+.header {
+    margin: 40px;
+}
+.header__content {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.header__avatar {
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow:  20px 20px 60px #d9d9d9, 
+             -20px -20px 60px #ffffff;
+}
+.header__title {
+    text-transform: uppercase;
+}
+.header__text {
+    display: flex;
+}
+.header__text-item{
+    margin: 10px;
+}
+.content__left {
+    text-align: center;
+    flex-basis: 30%;
+}
+.content__left-title {
+    font-size: 18px;
+    margin: 20px;
+}
+.content__left-text {
+}
+.content__right {
+    flex-basis: 70%;
+}
+.content__right-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 10px;
+}
+.content__right-text {
+    margin: 0 0 0 50px;
+}
+.content__right-item {
+    font-weight: 600;
+}
+.fa{
+    font-size: 25px;
+    margin: 0 10px 0 0;
+}
+.footer{
+    text-align: center;
+    margin: 40px;
+}
